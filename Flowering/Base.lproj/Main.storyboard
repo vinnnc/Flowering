@@ -17,7 +17,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="elF-eL-PK9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Statistic" id="j0H-ZG-paJ"/>
+                    <tabBarItem key="tabBarItem" title="Statistic" image="icon_statistic" id="j0H-ZG-paJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hva-rC-Bbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,7 +33,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="woB-4X-J5b"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tips" id="HsX-3T-iSk"/>
+                    <tabBarItem key="tabBarItem" title="Tips" image="icon_tips" id="HsX-3T-iSk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLu-3v-zs9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,7 +49,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gqI-WZ-z3o"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="Sfb-r9-NAM"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="icon_home" id="Sfb-r9-NAM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qrA-nx-2Jh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,7 +65,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="sbY-EC-9gw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Activity" id="gQJ-cS-KqX"/>
+                    <tabBarItem key="tabBarItem" title="Activity" image="icon_activity" id="gQJ-cS-KqX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mv2-CB-k1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,4 +92,10 @@
             <point key="canvasLocation" x="-545" y="64"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_activity" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="icon_home" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="icon_statistic" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="icon_tips" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
 </document>

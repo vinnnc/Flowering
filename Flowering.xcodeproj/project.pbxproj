@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BC0B0F0467AF9C16184DC792 /* Pods_Flowering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E1006C6095B160C3AC3519 /* Pods_Flowering.framework */; };
 		FB1CA679237407B00074A6FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1CA678237407B00074A6FC /* AppDelegate.swift */; };
 		FB1CA67B237407B00074A6FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1CA67A237407B00074A6FC /* SceneDelegate.swift */; };
-		FB1CA67D237407B00074A6FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1CA67C237407B00074A6FC /* ViewController.swift */; };
 		FB1CA680237407B00074A6FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA67E237407B00074A6FC /* Main.storyboard */; };
 		FB1CA682237407B10074A6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA681237407B10074A6FC /* Assets.xcassets */; };
 		FB1CA685237407B10074A6FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA683237407B10074A6FC /* LaunchScreen.storyboard */; };
@@ -23,7 +22,6 @@
 		FB1CA675237407B00074A6FC /* Flowering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flowering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1CA678237407B00074A6FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB1CA67A237407B00074A6FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB1CA67C237407B00074A6FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB1CA67F237407B00074A6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB1CA681237407B10074A6FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB1CA684237407B10074A6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +46,6 @@
 				0C8DA48B5FD6D23415552E6E /* Pods-Flowering.debug.xcconfig */,
 				A9CCD7EAC0CEA8FFC2671E40 /* Pods-Flowering.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,7 +80,6 @@
 			children = (
 				FB1CA678237407B00074A6FC /* AppDelegate.swift */,
 				FB1CA67A237407B00074A6FC /* SceneDelegate.swift */,
-				FB1CA67C237407B00074A6FC /* ViewController.swift */,
 				FB1CA67E237407B00074A6FC /* Main.storyboard */,
 				FB1CA681237407B10074A6FC /* Assets.xcassets */,
 				FB1CA683237407B10074A6FC /* LaunchScreen.storyboard */,
@@ -207,7 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1CA67D237407B00074A6FC /* ViewController.swift in Sources */,
 				FB1CA679237407B00074A6FC /* AppDelegate.swift in Sources */,
 				FB1CA67B237407B00074A6FC /* SceneDelegate.swift in Sources */,
 			);

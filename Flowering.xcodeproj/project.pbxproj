@@ -13,6 +13,8 @@
 		FB1CA680237407B00074A6FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA67E237407B00074A6FC /* Main.storyboard */; };
 		FB1CA682237407B10074A6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA681237407B10074A6FC /* Assets.xcassets */; };
 		FB1CA685237407B10074A6FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA683237407B10074A6FC /* LaunchScreen.storyboard */; };
+		FBED174C237415A90055A7E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED174B237415A90055A7E4 /* HomeViewController.swift */; };
+		FBED174E237437630055A7E4 /* ChangePlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED174D237437630055A7E4 /* ChangePlantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FB1CA681237407B10074A6FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB1CA684237407B10074A6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB1CA686237407B10074A6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBED174B237415A90055A7E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FBED174D237437630055A7E4 /* ChangePlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePlantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +86,10 @@
 				FB1CA67A237407B00074A6FC /* SceneDelegate.swift */,
 				FB1CA67E237407B00074A6FC /* Main.storyboard */,
 				FB1CA681237407B10074A6FC /* Assets.xcassets */,
+				FBED174D237437630055A7E4 /* ChangePlantViewController.swift */,
 				FB1CA683237407B10074A6FC /* LaunchScreen.storyboard */,
 				FB1CA686237407B10074A6FC /* Info.plist */,
+				FBED174B237415A90055A7E4 /* HomeViewController.swift */,
 			);
 			path = Flowering;
 			sourceTree = "<group>";
@@ -205,6 +211,8 @@
 			files = (
 				FB1CA679237407B00074A6FC /* AppDelegate.swift in Sources */,
 				FB1CA67B237407B00074A6FC /* SceneDelegate.swift in Sources */,
+				FBED174E237437630055A7E4 /* ChangePlantViewController.swift in Sources */,
+				FBED174C237415A90055A7E4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA543NG78K;
 				INFOPLIST_FILE = Flowering/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -369,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA543NG78K;
 				INFOPLIST_FILE = Flowering/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

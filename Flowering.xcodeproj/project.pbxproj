@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0B0F0467AF9C16184DC792 /* Pods_Flowering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E1006C6095B160C3AC3519 /* Pods_Flowering.framework */; };
 		FB1CA679237407B00074A6FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1CA678237407B00074A6FC /* AppDelegate.swift */; };
 		FB1CA67B237407B00074A6FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1CA67A237407B00074A6FC /* SceneDelegate.swift */; };
 		FB1CA67D237407B00074A6FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1CA67C237407B00074A6FC /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C8DA48B5FD6D23415552E6E /* Pods-Flowering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flowering.debug.xcconfig"; path = "Target Support Files/Pods-Flowering/Pods-Flowering.debug.xcconfig"; sourceTree = "<group>"; };
+		A9CCD7EAC0CEA8FFC2671E40 /* Pods-Flowering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flowering.release.xcconfig"; path = "Target Support Files/Pods-Flowering/Pods-Flowering.release.xcconfig"; sourceTree = "<group>"; };
+		F9E1006C6095B160C3AC3519 /* Pods_Flowering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flowering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1CA675237407B00074A6FC /* Flowering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flowering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1CA678237407B00074A6FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB1CA67A237407B00074A6FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0B0F0467AF9C16184DC792 /* Pods_Flowering.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26269B38A1C6E5A3B1D3E1DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C8DA48B5FD6D23415552E6E /* Pods-Flowering.debug.xcconfig */,
+				A9CCD7EAC0CEA8FFC2671E40 /* Pods-Flowering.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2E0F1D7199251434CD7FCEDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1006C6095B160C3AC3519 /* Pods_Flowering.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB1CA66C237407B00074A6FC = {
 			isa = PBXGroup;
 			children = (
 				FB1CA677237407B00074A6FC /* Flowering */,
 				FB1CA676237407B00074A6FC /* Products */,
+				26269B38A1C6E5A3B1D3E1DB /* Pods */,
+				2E0F1D7199251434CD7FCEDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB1CA689237407B10074A6FC /* Build configuration list for PBXNativeTarget "Flowering" */;
 			buildPhases = (
+				0F64106E34B540EBB2C7D45D /* [CP] Check Pods Manifest.lock */,
 				FB1CA671237407B00074A6FC /* Sources */,
 				FB1CA672237407B00074A6FC /* Frameworks */,
 				FB1CA673237407B00074A6FC /* Resources */,
+				A566B4ECDB02FE9C24E619FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F64106E34B540EBB2C7D45D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flowering-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A566B4ECDB02FE9C24E619FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flowering/Pods-Flowering-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flowering/Pods-Flowering-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flowering/Pods-Flowering-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB1CA671237407B00074A6FC /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		FB1CA68A237407B10074A6FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8DA48B5FD6D23415552E6E /* Pods-Flowering.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		FB1CA68B237407B10074A6FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CCD7EAC0CEA8FFC2671E40 /* Pods-Flowering.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

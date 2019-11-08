@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: UIViewController {
+    
     @IBOutlet weak var plantImageContainerView: UIView!
     @IBOutlet weak var plantImage: UIImageView!
     @IBOutlet weak var plantNameLabel: UILabel!
@@ -20,6 +22,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var moistureDegreeImage: UIImageView!
     @IBOutlet weak var fertilityLabel: UILabel!
     @IBOutlet weak var fertilityDegreeImage: UIImageView!
+    
+    var plant: Plant?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,19 +39,43 @@ class HomeViewController: UIViewController {
         plantImageContainerView.layer.shadowOpacity = 0.8
         plantImageContainerView.layer.cornerRadius = plantImage.frame.size.width / 2
         plantImageContainerView.layer.masksToBounds = false
-    }
-
-    @IBAction func changePlant(_ sender: Any) {
+        
+        loadData()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadData() {
+        let defaultPlant = ["name": "Empty", "image": "home_flower", "sunshine": "-1", "temperature": "-1", "moisture": "-1", "fertility": "-1"]
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let context = appDelegate.persistentContainer.viewContext
+        
+        do {
+            try plant = context.fetch(Plant.fetchRequest()).first as Plant
+        } catch {
+            print("Failed to fetch data.")
+        }
+        
+        if plant == nil {
+            print("Adding default plant")
+            
+            let newPlant = NSEntityDescription.insertNewObject(forEntityName: "Plant", into: context) as! Plant
+            newPlant.name = defaultPlant["name"]
+            newPlant.image = defaultPlant["image"]
+            newPlant.sunshine = Int32(defaultPlant["sunshine"])
+            newPlant.temperature = Int32(defaultPlant["temperature"])
+            newPlant.fertility = Int32(defaultPlant["fertility"])
+            newPlant.moisture = Int32(defaultPlant["moisture"])
+            
+            appDelegate.saveContext()
+        }
+        
+        do {
+            try plant = (context.fetch(Record.fetchRequest()).first as? Plant)!
+        } catch {
+            print("Failed to adding default plant.")
+        }
     }
-    */
-
 }

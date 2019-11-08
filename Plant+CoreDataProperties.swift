@@ -20,8 +20,8 @@ extension Plant {
     @NSManaged public var name: String?
     @NSManaged public var image: String?
     @NSManaged public var sunshine: Int32
-    @NSManaged public var fertility: Int32
     @NSManaged public var temperature: Int32
     @NSManaged public var moisture: Int32
+    @NSManaged public var fertility: Int32
 
 }

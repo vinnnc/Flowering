@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: UIViewController {
     
@@ -21,7 +22,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var moistureDegreeImage: UIImageView!
     @IBOutlet weak var fertilityLabel: UILabel!
     @IBOutlet weak var fertilityDegreeImage: UIImageView!
-        
+    
+    var appDelegate: AppDelegate?
+    var plant: Plant?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,5 +41,38 @@ class HomeViewController: UIViewController {
         plantImageContainerView.layer.cornerRadius = plantImage.frame.size.width / 2
         plantImageContainerView.layer.masksToBounds = false
         
+        loadData()
+    }
+    
+    func loadData() {
+        appDelegate = UIApplication.shared.delegate as? AppDelegate
+        let context = appDelegate!.persistentContainer.viewContext
+        
+        var plants = [Plant]()
+        do {
+            try plants = context.fetch(Plant.fetchRequest()) as [Plant]
+        } catch {
+            print("Failed to load plant data from database.")
+        }
+        
+        if plants.count == 0 {
+            plant = NSEntityDescription.insertNewObject(forEntityName: "Plant", into: context) as? Plant
+            plant?.name = "Ready to Setup"
+            plant?.image = "home_flower"
+            plant?.sunshine = Int32(-1)
+            plant?.temperature = Int32(-1)
+            plant?.moisture = Int32(-1)
+            plant?.fertility = Int32(-1)
+            appDelegate!.saveContext()
+        } else {
+            plant = plants.first!
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "changePlantSegue" {
+            let destination = segue.destination as! ChangePlantViewController
+            destination.plant = plant
+        }
     }
 }

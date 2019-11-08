@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-class ChangePlantViewController: UIViewController {
+class ChangePlantViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var plantImageContainerView: UIView!
     @IBOutlet weak var plantImage: UIImageView!
@@ -57,8 +58,28 @@ class ChangePlantViewController: UIViewController {
         }
     }
     
+    @IBAction func gestureTapPhoto(_ sender: Any) {
+        let controller = UIImagePickerController()
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            controller.sourceType = .camera
+        } else {
+            controller.sourceType = .photoLibrary
+        }
+        
+        controller.allowsEditing = false
+        controller.delegate = self
+        self.present(controller, animated: true, completion: nil)
+    }
+    
     @IBAction func save(_ sender: Any) {
         
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[.originalImage] as? UIImage {
+            plantImage.image = pickedImage
+        }
+        dismiss(animated: true, completion: nil)
     }
     
     /*

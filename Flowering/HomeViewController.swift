@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, ChangePlantDelegate {
     
     @IBOutlet weak var plantImageContainerView: UIView!
     @IBOutlet weak var plantImage: UIImageView!
@@ -42,6 +42,7 @@ class HomeViewController: UIViewController {
         plantImageContainerView.layer.masksToBounds = false
         
         loadData()
+        updateView()
     }
     
     func loadData() {
@@ -65,14 +66,37 @@ class HomeViewController: UIViewController {
             plant?.fertility = Int32(-1)
             appDelegate!.saveContext()
         } else {
-            plant = plants.first!
+            plant = plants.last!
         }
+    }
+    
+    func updateView() {
+        if plant?.image == "home_flower" {
+            plantImage.image = UIImage(named: "home_flower")
+        } else {
+            let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+            let url = NSURL(fileURLWithPath: path)
+            
+            if let pathComponent = url.appendingPathComponent(plant!.image!) {
+                let filePath = pathComponent.path
+                let fileManager = FileManager.default
+                let fileData = fileManager.contents(atPath: filePath)
+                plantImage.image = UIImage(data: fileData!)
+            }
+        }
+        
+        plantNameLabel.text = plant?.name
+    }
+    
+    func changePlant(newPlant: Plant) {
+        plant = newPlant
+        updateView()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "changePlantSegue" {
             let destination = segue.destination as! ChangePlantViewController
-            destination.plant = plant
+            destination.delegate = self
         }
     }
 }

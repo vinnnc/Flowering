@@ -13,9 +13,6 @@
 		FB1CA680237407B00074A6FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA67E237407B00074A6FC /* Main.storyboard */; };
 		FB1CA682237407B10074A6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA681237407B10074A6FC /* Assets.xcassets */; };
 		FB1CA685237407B10074A6FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA683237407B10074A6FC /* LaunchScreen.storyboard */; };
-		FB40C67923750B9F002C4F78 /* Flowering.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB40C67723750B9F002C4F78 /* Flowering.xcdatamodeld */; };
-		FB40C67C23750C0D002C4F78 /* Plant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40C67A23750C0D002C4F78 /* Plant+CoreDataClass.swift */; };
-		FB40C67D23750C0D002C4F78 /* Plant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40C67B23750C0D002C4F78 /* Plant+CoreDataProperties.swift */; };
 		FBED174C237415A90055A7E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED174B237415A90055A7E4 /* HomeViewController.swift */; };
 		FBED174E237437630055A7E4 /* ChangePlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED174D237437630055A7E4 /* ChangePlantViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,9 +28,6 @@
 		FB1CA681237407B10074A6FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB1CA684237407B10074A6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB1CA686237407B10074A6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB40C67823750B9F002C4F78 /* Flowering.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Flowering.xcdatamodel; sourceTree = "<group>"; };
-		FB40C67A23750C0D002C4F78 /* Plant+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plant+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		FB40C67B23750C0D002C4F78 /* Plant+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plant+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		FBED174B237415A90055A7E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FBED174D237437630055A7E4 /* ChangePlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePlantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +82,6 @@
 		FB1CA677237407B00074A6FC /* Flowering */ = {
 			isa = PBXGroup;
 			children = (
-				FB40C67623750B8F002C4F78 /* DataModel */,
 				FB1CA678237407B00074A6FC /* AppDelegate.swift */,
 				FB1CA67A237407B00074A6FC /* SceneDelegate.swift */,
 				FB1CA67E237407B00074A6FC /* Main.storyboard */,
@@ -99,16 +92,6 @@
 				FBED174B237415A90055A7E4 /* HomeViewController.swift */,
 			);
 			path = Flowering;
-			sourceTree = "<group>";
-		};
-		FB40C67623750B8F002C4F78 /* DataModel */ = {
-			isa = PBXGroup;
-			children = (
-				FB40C67A23750C0D002C4F78 /* Plant+CoreDataClass.swift */,
-				FB40C67B23750C0D002C4F78 /* Plant+CoreDataProperties.swift */,
-				FB40C67723750B9F002C4F78 /* Flowering.xcdatamodeld */,
-			);
-			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,12 +210,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB1CA679237407B00074A6FC /* AppDelegate.swift in Sources */,
-				FB40C67C23750C0D002C4F78 /* Plant+CoreDataClass.swift in Sources */,
-				FB40C67923750B9F002C4F78 /* Flowering.xcdatamodeld in Sources */,
 				FB1CA67B237407B00074A6FC /* SceneDelegate.swift in Sources */,
 				FBED174E237437630055A7E4 /* ChangePlantViewController.swift in Sources */,
 				FBED174C237415A90055A7E4 /* HomeViewController.swift in Sources */,
-				FB40C67D23750C0D002C4F78 /* Plant+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,19 +414,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FB40C67723750B9F002C4F78 /* Flowering.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FB40C67823750B9F002C4F78 /* Flowering.xcdatamodel */,
-			);
-			currentVersion = FB40C67823750B9F002C4F78 /* Flowering.xcdatamodel */;
-			path = Flowering.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FB1CA66D237407B00074A6FC /* Project object */;
 }

@@ -68,6 +68,10 @@ class ChangePlantViewController: UIViewController, UIImagePickerControllerDelega
             sunshineSegment.selectedSegmentIndex = 1
         }
         
+        if Int(plant!.temperature) != -1 {
+            fertilityPeriodTextField.text = String(plant!.fertility)
+        }
+        
         if Int(plant!.fertility) != -1 {
             fertilityPeriodTextField.text = String(plant!.fertility)
         }
@@ -92,6 +96,10 @@ class ChangePlantViewController: UIViewController, UIImagePickerControllerDelega
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func gestureTapPhoto(_ sender: Any) {

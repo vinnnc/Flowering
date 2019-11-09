@@ -93,12 +93,14 @@ PODS:
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
   - Protobuf (3.10.0)
+  - PTCardTabBar (1.0.1)
 
 DEPENDENCIES:
   - Charts
   - Firebase/Auth
   - Firebase/Firestore
   - JTAppleCalendar
+  - PTCardTabBar
 
 SPEC REPOS:
   trunk:
@@ -121,6 +123,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - PTCardTabBar
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
@@ -142,7 +145,8 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
+  PTCardTabBar: 9112a6d4eb2b73da9cf4e7f3aefe04504479cf98
 
-PODFILE CHECKSUM: 55699d82485859ff1082490c9a76b9ecb3b23a98
+PODFILE CHECKSUM: 6265a7795d9b37bf2c629ff230783588c0744a03
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

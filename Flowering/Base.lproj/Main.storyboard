@@ -14,7 +14,19 @@
                     <view key="view" contentMode="scaleToFill" id="fXu-rA-fQH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sff-wJ-i6w">
+                                <rect key="frame" x="135.33333333333334" y="388" width="104.33333333333334" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Sff-wJ-i6w" firstAttribute="centerX" secondItem="fXu-rA-fQH" secondAttribute="centerX" id="0kf-w0-abh"/>
+                            <constraint firstItem="Sff-wJ-i6w" firstAttribute="centerY" secondItem="fXu-rA-fQH" secondAttribute="centerY" id="YDg-AS-edu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="elF-eL-PK9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Statistic" image="icon_statistic" id="j0H-ZG-paJ"/>
@@ -30,7 +42,19 @@
                     <view key="view" contentMode="scaleToFill" id="jZ9-en-TGu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a3-eH-VQp">
+                                <rect key="frame" x="159.66666666666666" y="388" width="55.666666666666657" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4a3-eH-VQp" firstAttribute="centerX" secondItem="jZ9-en-TGu" secondAttribute="centerX" id="89Q-tS-kT7"/>
+                            <constraint firstItem="4a3-eH-VQp" firstAttribute="centerY" secondItem="jZ9-en-TGu" secondAttribute="centerY" id="ZbZ-kG-MKJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="woB-4X-J5b"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tips" image="icon_tips" id="HsX-3T-iSk"/>
@@ -562,7 +586,19 @@
                     <view key="view" contentMode="scaleToFill" id="4kx-rh-q4u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apX-46-USI">
+                                <rect key="frame" x="139.66666666666666" y="388" width="96" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="apX-46-USI" firstAttribute="centerY" secondItem="4kx-rh-q4u" secondAttribute="centerY" id="flk-2z-Sf1"/>
+                            <constraint firstItem="apX-46-USI" firstAttribute="centerX" secondItem="4kx-rh-q4u" secondAttribute="centerX" id="sP0-ls-89q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sbY-EC-9gw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Activity" image="icon_activity" id="gQJ-cS-KqX"/>
@@ -571,10 +607,10 @@
             </objects>
             <point key="canvasLocation" x="-1034" y="825"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Card Tab Bar Controller-->
         <scene sceneID="KIW-vV-uic">
             <objects>
-                <tabBarController id="AVy-8V-4Uk" sceneMemberID="viewController">
+                <tabBarController id="AVy-8V-4Uk" customClass="PTCardTabBarController" customModule="PTCardTabBar" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ldU-qz-eBo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -10,4 +10,5 @@ target 'Flowering' do
     pod 'Firebase/Auth'
     pod 'Charts'
     pod 'JTAppleCalendar'
+    pod 'PTCardTabBar'
 end

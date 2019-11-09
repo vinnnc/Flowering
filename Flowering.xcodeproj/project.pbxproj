@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BC0B0F0467AF9C16184DC792 /* Pods_Flowering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E1006C6095B160C3AC3519 /* Pods_Flowering.framework */; };
-		FB0BCC9923768DF700BEBDC2 /* CUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0BCC9823768DF700BEBDC2 /* CUIView.swift */; };
 		FB0BCC9B23769EFE00BEBDC2 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0BCC9A23769EFE00BEBDC2 /* TipsViewController.swift */; };
 		FB0BCC9F2376A39D00BEBDC2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0BCC9E2376A39D00BEBDC2 /* WebViewController.swift */; };
+		FB0BCCA72376AA2100BEBDC2 /* CUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0BCCA62376AA2100BEBDC2 /* CUIView.swift */; };
 		FB1CA679237407B00074A6FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1CA678237407B00074A6FC /* AppDelegate.swift */; };
 		FB1CA67B237407B00074A6FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1CA67A237407B00074A6FC /* SceneDelegate.swift */; };
 		FB1CA680237407B00074A6FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA67E237407B00074A6FC /* Main.storyboard */; };
@@ -27,9 +27,9 @@
 		0C8DA48B5FD6D23415552E6E /* Pods-Flowering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flowering.debug.xcconfig"; path = "Target Support Files/Pods-Flowering/Pods-Flowering.debug.xcconfig"; sourceTree = "<group>"; };
 		A9CCD7EAC0CEA8FFC2671E40 /* Pods-Flowering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flowering.release.xcconfig"; path = "Target Support Files/Pods-Flowering/Pods-Flowering.release.xcconfig"; sourceTree = "<group>"; };
 		F9E1006C6095B160C3AC3519 /* Pods_Flowering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flowering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB0BCC9823768DF700BEBDC2 /* CUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CUIView.swift; path = ../../SmoothBreath_iOS/SmoothBreath_iOS/CUIView.swift; sourceTree = "<group>"; };
 		FB0BCC9A23769EFE00BEBDC2 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		FB0BCC9E2376A39D00BEBDC2 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = DataModel/WebViewController.swift; sourceTree = "<group>"; };
+		FB0BCCA62376AA2100BEBDC2 /* CUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUIView.swift; sourceTree = "<group>"; };
 		FB1CA675237407B00074A6FC /* Flowering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flowering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1CA678237407B00074A6FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB1CA67A237407B00074A6FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +98,6 @@
 				FB1CA686237407B10074A6FC /* Info.plist */,
 				FB1CA678237407B00074A6FC /* AppDelegate.swift */,
 				FBED174D237437630055A7E4 /* ChangePlantViewController.swift */,
-				FB0BCC9823768DF700BEBDC2 /* CUIView.swift */,
 				FB0BCC9A23769EFE00BEBDC2 /* TipsViewController.swift */,
 				FBED174B237415A90055A7E4 /* HomeViewController.swift */,
 				FB1CA67A237407B00074A6FC /* SceneDelegate.swift */,
@@ -106,6 +105,7 @@
 				FBD752E823752129009EB8F4 /* DataModel */,
 				FB1CA683237407B10074A6FC /* LaunchScreen.storyboard */,
 				FB1CA67E237407B00074A6FC /* Main.storyboard */,
+				FB0BCCA62376AA2100BEBDC2 /* CUIView.swift */,
 			);
 			path = Flowering;
 			sourceTree = "<group>";
@@ -237,11 +237,11 @@
 			files = (
 				FB1CA679237407B00074A6FC /* AppDelegate.swift in Sources */,
 				FBD752FE23753786009EB8F4 /* Plant+CoreDataClass.swift in Sources */,
-				FB0BCC9923768DF700BEBDC2 /* CUIView.swift in Sources */,
 				FB0BCC9F2376A39D00BEBDC2 /* WebViewController.swift in Sources */,
 				FBD752EB2375213D009EB8F4 /* Flowering.xcdatamodeld in Sources */,
 				FB1CA67B237407B00074A6FC /* SceneDelegate.swift in Sources */,
 				FB0BCC9B23769EFE00BEBDC2 /* TipsViewController.swift in Sources */,
+				FB0BCCA72376AA2100BEBDC2 /* CUIView.swift in Sources */,
 				FBED174E237437630055A7E4 /* ChangePlantViewController.swift in Sources */,
 				FBED174C237415A90055A7E4 /* HomeViewController.swift in Sources */,
 				FBD752FF23753786009EB8F4 /* Plant+CoreDataProperties.swift in Sources */,

@@ -2,7 +2,7 @@
 //  Plant+CoreDataClass.swift
 //  Flowering
 //
-//  Created by Wenchu Du on 8/11/19.
+//  Created by Wenchu Du on 11/11/19.
 //  Copyright © 2019 Personal. All rights reserved.
 //
 //

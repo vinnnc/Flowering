@@ -136,11 +136,11 @@ class ChangePlantViewController: UIViewController, UIImagePickerControllerDelega
             return
         }
         
-        let sunshine = Int32(sunshineSegment.selectedSegmentIndex)
-        let temperature = Int32(temperatureSegment.selectedSegmentIndex)
-        let moisture = Int32(waterSegment.selectedSegmentIndex)
+        let sunshine = Int16(sunshineSegment.selectedSegmentIndex)
+        let temperature = Int16(temperatureSegment.selectedSegmentIndex)
+        let moisture = Int16(waterSegment.selectedSegmentIndex)
         
-        guard let fertility = Int32(fertilityPeriodTextField.text!) else {
+        guard let fertility = Int16(fertilityPeriodTextField.text!) else {
             displayMessage(title: "Save Failed", message: "Please enter a number to set fertility period day.")
             return
         }

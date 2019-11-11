@@ -16,9 +16,14 @@
 		FB1CA680237407B00074A6FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA67E237407B00074A6FC /* Main.storyboard */; };
 		FB1CA682237407B10074A6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA681237407B10074A6FC /* Assets.xcassets */; };
 		FB1CA685237407B10074A6FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1CA683237407B10074A6FC /* LaunchScreen.storyboard */; };
+		FB8F8EAE23790064007AD2DD /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F8EAD23790063007AD2DD /* ActivityViewController.swift */; };
+		FB8F8EB423790206007AD2DD /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F8EB323790206007AD2DD /* Parameter.swift */; };
+		FB8F8EC12379062C007AD2DD /* Plant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F8EBD2379062C007AD2DD /* Plant+CoreDataClass.swift */; };
+		FB8F8EC22379062C007AD2DD /* Plant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F8EBE2379062C007AD2DD /* Plant+CoreDataProperties.swift */; };
+		FB8F8EC32379062C007AD2DD /* FarmDate+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F8EBF2379062C007AD2DD /* FarmDate+CoreDataClass.swift */; };
+		FB8F8EC42379062C007AD2DD /* FarmDate+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F8EC02379062C007AD2DD /* FarmDate+CoreDataProperties.swift */; };
+		FB8F8EC62379067C007AD2DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB8F8EC52379067C007AD2DD /* GoogleService-Info.plist */; };
 		FBD752EB2375213D009EB8F4 /* Flowering.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD752E92375213D009EB8F4 /* Flowering.xcdatamodeld */; };
-		FBD752FE23753786009EB8F4 /* Plant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD752FC23753786009EB8F4 /* Plant+CoreDataClass.swift */; };
-		FBD752FF23753786009EB8F4 /* Plant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD752FD23753786009EB8F4 /* Plant+CoreDataProperties.swift */; };
 		FBED174C237415A90055A7E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED174B237415A90055A7E4 /* HomeViewController.swift */; };
 		FBED174E237437630055A7E4 /* ChangePlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED174D237437630055A7E4 /* ChangePlantViewController.swift */; };
 /* End PBXBuildFile section */
@@ -37,9 +42,14 @@
 		FB1CA681237407B10074A6FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB1CA684237407B10074A6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB1CA686237407B10074A6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8F8EAD23790063007AD2DD /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		FB8F8EB323790206007AD2DD /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		FB8F8EBD2379062C007AD2DD /* Plant+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plant+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FB8F8EBE2379062C007AD2DD /* Plant+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plant+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FB8F8EBF2379062C007AD2DD /* FarmDate+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FarmDate+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FB8F8EC02379062C007AD2DD /* FarmDate+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FarmDate+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FB8F8EC52379067C007AD2DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FBD752EA2375213D009EB8F4 /* Flowering.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Flowering.xcdatamodel; sourceTree = "<group>"; };
-		FBD752FC23753786009EB8F4 /* Plant+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plant+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FBD752FD23753786009EB8F4 /* Plant+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plant+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FBED174B237415A90055A7E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FBED174D237437630055A7E4 /* ChangePlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePlantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,18 +104,21 @@
 		FB1CA677237407B00074A6FC /* Flowering */ = {
 			isa = PBXGroup;
 			children = (
-				FB0BCC9E2376A39D00BEBDC2 /* WebViewController.swift */,
+				FB8F8EC52379067C007AD2DD /* GoogleService-Info.plist */,
 				FB1CA686237407B10074A6FC /* Info.plist */,
+				FB8F8EAD23790063007AD2DD /* ActivityViewController.swift */,
 				FB1CA678237407B00074A6FC /* AppDelegate.swift */,
 				FBED174D237437630055A7E4 /* ChangePlantViewController.swift */,
-				FB0BCC9A23769EFE00BEBDC2 /* TipsViewController.swift */,
+				FB0BCCA62376AA2100BEBDC2 /* CUIView.swift */,
 				FBED174B237415A90055A7E4 /* HomeViewController.swift */,
+				FB8F8EB323790206007AD2DD /* Parameter.swift */,
 				FB1CA67A237407B00074A6FC /* SceneDelegate.swift */,
+				FB0BCC9A23769EFE00BEBDC2 /* TipsViewController.swift */,
+				FB0BCC9E2376A39D00BEBDC2 /* WebViewController.swift */,
 				FB1CA681237407B10074A6FC /* Assets.xcassets */,
 				FBD752E823752129009EB8F4 /* DataModel */,
 				FB1CA683237407B10074A6FC /* LaunchScreen.storyboard */,
 				FB1CA67E237407B00074A6FC /* Main.storyboard */,
-				FB0BCCA62376AA2100BEBDC2 /* CUIView.swift */,
 			);
 			path = Flowering;
 			sourceTree = "<group>";
@@ -113,8 +126,10 @@
 		FBD752E823752129009EB8F4 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				FBD752FC23753786009EB8F4 /* Plant+CoreDataClass.swift */,
-				FBD752FD23753786009EB8F4 /* Plant+CoreDataProperties.swift */,
+				FB8F8EBD2379062C007AD2DD /* Plant+CoreDataClass.swift */,
+				FB8F8EBE2379062C007AD2DD /* Plant+CoreDataProperties.swift */,
+				FB8F8EBF2379062C007AD2DD /* FarmDate+CoreDataClass.swift */,
+				FB8F8EC02379062C007AD2DD /* FarmDate+CoreDataProperties.swift */,
 				FBD752E92375213D009EB8F4 /* Flowering.xcdatamodeld */,
 			);
 			path = DataModel;
@@ -181,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB1CA685237407B10074A6FC /* LaunchScreen.storyboard in Resources */,
+				FB8F8EC62379067C007AD2DD /* GoogleService-Info.plist in Resources */,
 				FB1CA682237407B10074A6FC /* Assets.xcassets in Resources */,
 				FB1CA680237407B00074A6FC /* Main.storyboard in Resources */,
 			);
@@ -236,15 +252,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB1CA679237407B00074A6FC /* AppDelegate.swift in Sources */,
-				FBD752FE23753786009EB8F4 /* Plant+CoreDataClass.swift in Sources */,
+				FB8F8EC42379062C007AD2DD /* FarmDate+CoreDataProperties.swift in Sources */,
+				FB8F8EC32379062C007AD2DD /* FarmDate+CoreDataClass.swift in Sources */,
 				FB0BCC9F2376A39D00BEBDC2 /* WebViewController.swift in Sources */,
 				FBD752EB2375213D009EB8F4 /* Flowering.xcdatamodeld in Sources */,
+				FB8F8EC22379062C007AD2DD /* Plant+CoreDataProperties.swift in Sources */,
 				FB1CA67B237407B00074A6FC /* SceneDelegate.swift in Sources */,
+				FB8F8EB423790206007AD2DD /* Parameter.swift in Sources */,
 				FB0BCC9B23769EFE00BEBDC2 /* TipsViewController.swift in Sources */,
+				FB8F8EC12379062C007AD2DD /* Plant+CoreDataClass.swift in Sources */,
 				FB0BCCA72376AA2100BEBDC2 /* CUIView.swift in Sources */,
 				FBED174E237437630055A7E4 /* ChangePlantViewController.swift in Sources */,
 				FBED174C237415A90055A7E4 /* HomeViewController.swift in Sources */,
-				FBD752FF23753786009EB8F4 /* Plant+CoreDataProperties.swift in Sources */,
+				FB8F8EAE23790064007AD2DD /* ActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

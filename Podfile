@@ -8,7 +8,7 @@ target 'Flowering' do
   # Pods for Flowering
     pod 'Firebase/Firestore'
     pod 'Firebase/Auth'
-    pod 'Charts'
-    pod 'JTAppleCalendar'
+    pod 'Firebase/Database'
+    pod 'CVCalendar'
     pod 'PTCardTabBar'
 end

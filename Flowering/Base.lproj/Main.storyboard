@@ -305,7 +305,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="484" y="824.6305418719212"/>
+            <point key="canvasLocation" x="484" y="825"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="l8v-hJ-oCD">
@@ -633,6 +633,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="icon_home" id="Sfb-r9-NAM"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="qgd-3Y-fsL" id="qgN-hq-gJm"/>
                         <outlet property="fertilityDegreeImage" destination="KD6-vN-qxO" id="Oad-mo-Rv5"/>
                         <outlet property="fertilityLabel" destination="Oxg-v1-ISI" id="4ZW-xf-PYA"/>
                         <outlet property="moistureDegreeImage" destination="LOC-d4-F91" id="0cS-SC-W3T"/>
@@ -881,33 +882,27 @@
             </objects>
             <point key="canvasLocation" x="-1559.2" y="1559.8522167487686"/>
         </scene>
-        <!--Activity-->
+        <!--Activity View Controller-->
         <scene sceneID="glB-dA-Z7c">
             <objects>
-                <viewController id="dsd-B2-hqy" customClass="TipsViewController" customModule="Flowering" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dsd-B2-hqy" customClass="ActivityViewController" customModule="Flowering" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4kx-rh-q4u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apX-46-USI">
-                                <rect key="frame" x="139.66666666666666" y="388" width="96" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="apX-46-USI" firstAttribute="centerY" secondItem="4kx-rh-q4u" secondAttribute="centerY" id="flk-2z-Sf1"/>
-                            <constraint firstItem="apX-46-USI" firstAttribute="centerX" secondItem="4kx-rh-q4u" secondAttribute="centerX" id="sP0-ls-89q"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sbY-EC-9gw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Activity" image="icon_activity" id="gQJ-cS-KqX"/>
+                    <navigationItem key="navigationItem" id="XEp-iI-fZ8">
+                        <barButtonItem key="rightBarButtonItem" title="Today" id="jIB-iH-nQS">
+                            <connections>
+                                <action selector="todayButtonTapoed:" destination="dsd-B2-hqy" id="giG-HL-0ib"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mv2-CB-k1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-546" y="825"/>
+            <point key="canvasLocation" x="-546" y="1560"/>
         </scene>
         <!--Card Tab Bar Controller-->
         <scene sceneID="KIW-vV-uic">
@@ -920,13 +915,32 @@
                     </tabBar>
                     <connections>
                         <segue destination="Okn-9s-l1O" kind="relationship" relationship="viewControllers" id="r2S-M0-jz5"/>
-                        <segue destination="dsd-B2-hqy" kind="relationship" relationship="viewControllers" id="9jf-2Q-pLg"/>
+                        <segue destination="9pQ-bh-MlY" kind="relationship" relationship="viewControllers" id="9jf-2Q-pLg"/>
                         <segue destination="Ly0-pr-zaZ" kind="relationship" relationship="viewControllers" id="kb1-PK-9Gf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcM-x4-mDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-545" y="64"/>
+        </scene>
+        <!--Activity-->
+        <scene sceneID="kyy-8Z-9he">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9pQ-bh-MlY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Activity" image="icon_activity" id="gQJ-cS-KqX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mwK-KO-MSb">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dsd-B2-hqy" kind="relationship" relationship="rootViewController" id="s5g-0S-Q4y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="05M-rr-cwl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-546.39999999999998" y="824.6305418719212"/>
         </scene>
     </scenes>
     <resources>
